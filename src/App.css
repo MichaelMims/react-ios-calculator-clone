@@ -1,0 +1,101 @@
+html,
+  body {
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background: transparent;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+
+#root {
+  height: 100%;
+}
+
+.mainContent {
+display: inline-block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.calcButton {
+  font-size: 1.8em;
+  min-width: 3em;
+  min-height: 3em;
+  margin: 3px;
+  border-radius: 50%;
+  border: none;
+  color: rgb(255,255,255);
+}
+
+.numpadButton {
+  background: rgb(50,50,50);
+}
+
+.numpadExtraButton {
+  color: rgb(0, 0, 0);
+  background: rgb(150,150,150);
+}
+
+.operationButtons {
+  background: rgb(255,165,0);
+}
+
+.screenDiv {
+  display: flex;
+  flex: 0 1 auto;
+  text-align: right;
+  /*direction: rtl;*/
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+}
+
+.screenValue {
+  min-width: 100%;
+  padding: 5px;
+}
+
+.keyPad {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+}
+
+.numpadComponent {
+  display: flex;
+  flex-direction: column;
+}
+
+.operationsComponent {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-row {
+  display: flex;
+  text-align: center;
+
+
+}
+
+.zeroKey {
+  flex: 1 0 auto;
+  border-radius: 20em / 20em;
+}
