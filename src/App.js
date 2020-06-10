@@ -1,7 +1,7 @@
 import React from 'react';
-import Screen from "./components/screen/screen";
-import Numpad from "./components/numpad/numpad";
-import Operations from "./components/operations/operations";
+import Screen from "./components/Screen";
+import Numpad from "./components/Numpad";
+import OperationsPad from "./components/OperationsPad";
 import './App.css';
 
 class App extends React.Component {
@@ -133,7 +133,7 @@ class App extends React.Component {
     };
 
 
-    // onClick Handler for Operations component buttons
+    // onClick Handler for OperationsPad component buttons
     onClickOperations = (e) => {
         e.preventDefault();
 
@@ -181,7 +181,7 @@ class App extends React.Component {
                                 <Numpad allClearValue={this.state.allClear} onClick={this.onClickNumber}/>
                             </div>
                             <div className="operationsComponent">
-                                <Operations onClick={this.onClickOperations}/>
+                                <OperationsPad onClick={this.onClickOperations}/>
                             </div>
 
                         </div>

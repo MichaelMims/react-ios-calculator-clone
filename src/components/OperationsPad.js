@@ -1,7 +1,7 @@
 import React from 'react';
-import CalcButton from "../CalcButton";
+import CalcButton from "./CalcButton";
 
-function Operations(props) {
+function OperationsPad(props) {
 
     const styles = {
         classNames: "btn btn-light calcButton operationButtons"
@@ -22,4 +22,4 @@ function Operations(props) {
         </div>
     );
 }
-export default Operations;
+export default OperationsPad;
